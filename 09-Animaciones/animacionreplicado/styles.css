@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+.padre{
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+}
+.hijo{
+    background-color: rgb(0, 255, 255);
+    width: 50%;
+    height: 50%;
+    animation: girar 2s forwards alternate infinite;
+}
+
+.padre:hover .hijo{
+    animation-play-state: paused;
+}
+
+@keyframes girar {
+    25%{
+        background-color: gold;
+        transform: translateX(100%);
+    }
+    50%{
+        background-color: rgb(0, 102, 255);
+        transform: translateX(100%) translateY(100%);
+    }
+    75%{
+        background-color: rgb(151, 0, 0);
+        transform:  translateY(100%);
+    }
+    100%{
+        background-color: rgb(151, 0, 0);
+    }
+}

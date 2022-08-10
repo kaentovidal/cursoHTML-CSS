@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+h1{
+    font-family: Arial;
+}
+
+.main_container{
+    display: flex;
+    width: 1005;
+    justify-content: center;
+}
+
+section{
+    padding: 10px;
+}
+.uno{
+    display: flex;
+}
+.tres{
+    justify-items: center;
+    justify-content: space-between;
+}
